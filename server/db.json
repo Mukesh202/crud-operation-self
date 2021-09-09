@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "name": "manu",
+      "mobile": "9876543215",
+      "email": "manu@gmail.com",
+      "password": "0987665447",
+      "id": 3
+    },
+    {
+      "name": "Mukesh Kumar",
+      "mobile": "957395837945",
+      "email": "mukeshinhcl@gmail.com",
+      "password": "12345678",
+      "id": 4
+    },
+    {
+      "name": "Mukesh Kumar",
+      "mobile": "957395837945",
+      "email": "mukeshinhcl@gmail.com",
+      "password": "1234567890",
+      "id": 5
+    },
+    {
+      "name": "manu",
+      "mobile": "9876543215",
+      "email": "manu@gmail.com",
+      "password": "0987665443",
+      "id": 6
+    },
+    {
+      "name": "manu",
+      "mobile": "9876543215",
+      "email": "manu@gmail.com",
+      "password": "0987665447",
+      "id": 7
+    },
+    {
+      "name": "Mukesh Kumar",
+      "mobile": "1088712",
+      "email": "mukeshinhcl@gmail.com",
+      "password": "123345",
+      "id": 8
+    },
+    {
+      "name": "Mukesh Kumar",
+      "mobile": "1088711",
+      "email": "mukeshinhcl@gmail.com",
+      "password": "987654322",
+      "id": 9
+    }
+  ]
+}

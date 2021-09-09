@@ -1,0 +1,14 @@
+
+
+
+table {
+
+  border: solid black 3px;
+}
+
+td , th,tr{
+    
+    text-align: center;
+    padding: 3px 20px;
+    border: solid black 3px;
+  }

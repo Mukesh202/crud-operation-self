@@ -1,0 +1,53 @@
+
+
+<h5> crud operation </h5>
+
+
+<div class="container">
+    <form #myForm="ngForm">
+            <div class="form-group">
+            <label for="name">name</label> <br>
+            <input type="text" name="name" id="name" class="form-control" [(ngModel)]="userObj.name"  > <br>
+        </div>
+        <div class="form-group">
+            <label for="mobile">mobile</label> <br>
+            <input type="text" name="mobile" id="mobile" class="form-control" [(ngModel)]="userObj.mobile"> <br>
+        </div>
+        <div class="form-group">
+            <label for="email">email</label> <br>
+            <input type="text" name="email" id="email" class="form-control" [(ngModel)]="userObj.email"> <br>
+        </div>
+        <div class="form-group">
+            <label for="password">password</label> <br>
+            <input type="text" name="password" id="password" class="form-control" [(ngModel)]="userObj.password"> <br>
+        </div>
+        </form>
+        <button type="submit" class="btn btn-primary" *ngIf="!isEdit" (click)="addUser(myForm.value)" > submit </button>
+        <button type="submit" class="btn btn-primary"  *ngIf="isEdit" (click)=" updateUser()" > update </button>
+        <div class="row">
+            
+            <table>
+            <thead>
+                <tr>
+                    <th>user name</th>
+                    <th>user mobile</th>
+                    <th>user email</th>
+                    <th>user password</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of  alluser" >
+                    <td>{{user.name}}</td>
+                    <td>{{user.mobile}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.password}}</td>
+                    <td><button (click)="edituser(user)" >Edit</button></td>
+                    <td><button (click)="deleteuser(user)" >Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
